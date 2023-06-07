@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <title>q-gen</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/7d74ce6fe0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-dark">
+<div class="container-fluid">
+     <div class = "row">
+         <div class = "col-12 col-lg-6 offset-lg-3">
+            <div class="mainWindow">
+
+
+
+
+
+                
+<div id="scorebd" class="col-12">
+
+
+<h3 id="s" name="apple"></h3>
+<i class="fa-solid fa-apple-whole"></i>
+<h3 id="c"></h3>
+<i class="fa-solid fa-coins"></i>
+<h3 id="pname">{{name}}</h3>
+<i class="fa-solid fa-user"></i>
+<i id="controlMenu" class="fa-solid fa-pause"></i>
+<h3 id="l">M :</h3>
+
+
+<!-- ..........................................Display: Game canvas........................................-->
+
+</div>
+<div class="canvasWindow">
+<canvas  class = "col-12 mw-400 mh-400" height ="230px" id="game">does not suppport</canvas>
+<div id="main">
+
+    <div id="homebtns">
+
+        <button id="startbtn" class=" btn1 ctrlbtns" onclick="singlePlayer()">SINGLE</button>
+        <button id="levelbtn" class="btn1 ctrlbtns">SCORES</button>
+        <button id="player" class="btn1 ctrlbtns">PLAYER</button>
+        <button id="mplayer" class="btn1 ctrlbtns">JOIN</button>
+
+    </div>
+
+    <!-- ..........................................Display: Gameover message........................................-->
+
+    <div id="message">
+        <h1 id="text_gameover">GAMEOVER</h1>
+        <div id="Score_gameover">
+            <table id="table_gameover">
+                <tr>
+                    <td class="td1"><i class="fa-solid fa-user"></i><br></td>
+                    <td class="td1">
+                        <h3 id="user_gameover">{{name}}</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1"><i class="fa-solid fa-apple-whole"></i></td>
+                    <td class="td1">
+                        <h3 id="hsc" name="hscr">Hi:</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1"><i class="fa-solid fa-coins"></i></td>
+                    <td class="td1">
+                        <h3 id="ap1">hello</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1"><i class="fa-solid fa-trophy"></i></td>
+                    <td class="td1">
+                        <h3 id="hsc123" name="hscr">HighScore:</h3>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+    <!-- ..........................................Player login/register form........................................-->
+
+    <div id="playername">
+        <form>
+            <input id="playerinput" name="pname" type="text" placeholder="create-playername"></input>
+            <input class="playerform" id="password" name="ps_word" type="text"
+                placeholder="create-password"></input>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+        <button class="btn" id="ok">REGISTER</button>
+        <p id="msg-usercreated" class="message"></p>
+
+        <form class="login-form">
+            <input class="playerform " id="login-username" type="text" placeholder="username"
+                name="login-username" />
+            <input class="playerform" id="login-password" type="text" placeholder="password"
+                name="login-password" />
+            <button class="btn" name="login-button" type="button" id="login-button">login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+        <i id="hme" class="fa-solid fa-home"></i>
+
+    </div>
+
+    <!-- ..........................................Score table display........................................-->
+
+    <div id="scorebd1">
+        <table id="score_table">
+            <thead>
+                <tr>
+                    <th>PLAYER</th>
+                    <th><i class="fa-solid fa-trophy"></th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+    <button id="back" class="btn1"> BACK</button>
+</div>
+</div>
+
+<!-- ..........................................Display: Control menu........................................-->
+
+<div id="menu">
+<i class="fa-solid fa-play"></i>
+<i class="fa-solid fa-pause"></i>
+<i class="fa-solid fa-refresh"></i>
+<i class="fa-solid fa-arrow-right"></i>
+<i id="hme1" class="fa-solid fa-home"></i>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+   
+
+    <script src="/javascripts/play.js"></script>
+    <script src="/javascripts/createPlayer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>

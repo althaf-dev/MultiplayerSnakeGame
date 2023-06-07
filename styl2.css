@@ -1,0 +1,424 @@
+
+
+canvas{
+    box-shadow: black 20px 10px 50px; /*elevate our canvas and add shadow*/
+    border-radius: 20px;
+    image-rendering: pixelated;
+  
+   }
+  #scorebd{
+    background-color:black;
+    width: 400px;
+    border:white 5px solid;
+    padding: 20px;
+    border-radius: 20px;
+    position:absolute;
+    left:420px;
+  }
+  #s{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    margin: 5px;
+  }
+  #c{
+    color:gold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    align-self: center;
+    margin: 5px;
+  }
+  #l{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    margin: 5px;
+  }
+  #menu{
+    background-color:black;
+    width: 10.5%;
+    height: 80px;
+    border:gray 8px solid;
+    padding: 1px;
+    border-radius: 20px;
+    position: absolute;
+    left: 160px;
+    top: 350px;
+    align-items:center;
+    display: none;
+    z-index: +2;
+  
+  }
+  #menu{
+    color: blue;
+  }
+  .fa-solid.fa-play{
+  
+    margin: 10px;
+  }
+  .fa-solid.fa-play:active{
+  
+    margin: 10px;
+    color: blue;
+    transition: 10ms;
+  }
+  .fa-solid.fa-pause{
+  
+    margin: 10px;
+  }
+  .fa-solid.fa-pause:active{
+  
+    margin: 10px;
+    color: blue;
+    transition: 10ms;
+  }
+  
+  .fa-solid.fa-refresh{
+  
+    margin: 10px;
+  }
+  .fa-solid.fa-refresh:active{
+  
+    margin: 10px;
+    color: blue;
+    transition: 10ms;
+  }
+  .fa-solid.fa-arrow-right{
+  
+    margin: 10px;
+  }
+  .fa-solid.fa-forward:active{
+  
+    margin: 10px;
+    color: blue;
+    transition: 10ms;
+    
+  }
+  .fa-solid.fa-backward{
+  
+    margin: 20px;
+  }
+  .fa-solid.fa-backward:active{
+  
+    margin: 20px;
+    color: blue;
+    transition: 10ms;
+  }
+  .fa-solid.fa-ring{
+  
+    color: gold;
+    margin: 20px;
+    font-size: 25px;
+  }
+  .fa-solid.fa-gear{
+    color:white;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 2px;
+    left: 380px;
+    top: 20px;
+    position:absolute;
+    
+  }
+  i{
+    color: brown;
+  }
+  #message{
+  
+    color: brown;
+    background-color:black;
+    width: 15.5%;
+    height: 330px;
+    border:gray 8px solid;
+    padding: 10px;
+    padding-left: 8px;
+    border-radius: 20px;
+    position: absolute;
+    left: 100px;
+    top: 230px;
+    display:none;
+    z-index: +1;
+  
+  }
+  #Score_gameover{
+    width: 220px;
+    height: 250px;
+    position: absolute;
+    top:60px;  
+    left: 15px;
+    display: inline;
+  
+  
+  }
+  #table_gameover{
+    width:100%;
+    height: 70px;
+    position: absolute;
+    border: 5px solid grey;
+    border-radius: 10px;
+    top:8px;
+    left: 2px;
+    padding: 4px;
+  }
+  
+  .td1{
+    text-align: center;
+    width:100px;
+    height: 15px;
+    border:2px solid grey;
+  }
+  #text_gameover{
+    position:absolute;
+    left:25px;
+    top:2px;
+  
+  
+  }
+  .ctrlbtns{
+    width: 10%;
+    height: 50px;
+    color:white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 25px;
+    box-shadow: 3px white;
+   
+  
+  }
+  
+  
+  #scores{
+  
+    position:absolute;
+    top: 360px;
+    left: 150px;
+  }
+  
+  #s1234{
+    display:none;
+  }
+  
+  .fa-solid.fa-home{
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+  }
+  #playername{
+  
+    width: 15%;
+    height: 340px;
+    position:absolute;
+    top: 220px;
+    left: 100px;
+    display: none;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 5px white;
+    padding: 10px;
+    
+  }
+  #playerlabel{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+    margin-left: 10PX;
+    align-items: center;
+    left: 50px;
+    font-family:fantasy;
+  }
+  #playerinput{
+  
+    margin: 10px;
+    font-size: 12px;
+    width: 70%;
+   
+   
+    border-radius: 5px;
+    box-shadow:blueviolet 10px 10px 50px; /*elevate our canvas and add shadow*/
+    font-family: fantasy;
+    align-items: center;
+    padding: 8px;
+  }
+  #hme{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  
+  #pname{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    margin: 5px;
+  }
+  .fa-apple-whole{
+    color: brown;
+    font-size: 25px;
+    margin-left: 2px;
+  }
+  .fa-coins{
+    color: gold;
+    font-size: 26px;
+    margin-left: 2px;
+    margin-right: 0px;
+  }
+  .fa-user{
+  
+    color: white;
+    font-size: 26px;
+    margin-left: 2px;
+    margin-right: 0px;
+  }
+  
+  
+  #scorebd1{
+    display: none;
+    position:absolute;
+    margin: 10px;
+    font-size: 16px;
+    height: 190px;
+    width: 15%;
+  
+    align-items: center;
+    padding: 20px;
+    top:250px;
+    left:110px;
+    background-color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow:auto;
+  
+  }
+  
+  #back{
+    position: absolute;
+    background-color:white;
+    width:17.7%;
+    height: 50px;
+   
+    border: 2px solid white;
+    top:490px;
+    left: 119.8px;
+  }
+  #back:hover{
+    background-color: blue;
+  }
+  #startbtn:hover{
+    background-color: blue;
+  
+  }
+  #levelbtn:hover{
+    background-color: blue;
+  }
+  #player:hover{
+    background-color: blue;
+  
+  }
+  
+  #mplayer:hover{
+    background-color: blue;
+  
+  }
+  .playerform{
+  
+    margin: 10px;
+    font-size: 12px;
+    width: 70%;
+   
+    border-radius: 5px;
+    box-shadow:blueviolet 10px 10px 50px; /*elevate our canvas and add shadow*/
+    font-family: fantasy;
+    align-items: center;
+    padding: 8px;
+  }
+  .form {
+    animation-name: launch;
+    animation-duration: 4s;
+    position: absolute;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: none;
+  }
+  .btn1{
+  
+    display: inline-block;
+    background-color: blue;
+    width: 50%;
+    height: 40px;
+    margin: 10px;
+    
+    border-radius: 5px;
+  }
+  th,td,tbody,tr{
+  
+    border: 2px solid blue;
+    color:blue;
+    text-align: center;
+  
+  }
+  #score_table{
+    width: 100%;
+    border: 2px solid blue;
+    color:black;
+    
+  
+  }
+  
+  
+  
+  .fa-solid.fa-play:hover{
+  
+    color: blue;
+  }
+  .fa-solid.fa-pause:hover{
+  
+    color: blue;
+  
+  }
+  
+  .fa-solid.fa-home:hover{
+  
+    color:blue;
+  }
+  #homebtns{
+  
+    position:absolute;
+    top:50px;
+    left:120px;
+  }
+  /*#levelbtn{
+    position:absolute;
+    top: 370px;
+    left: 150px;  
+  
+  }
+  
+  #player{
+  
+    position:absolute;
+    top: 440px;
+    left: 150px;
+  }
+  #startbtn{
+  
+    position:absolute;
+    top:300px;
+    left: 150px;
+  
+  }
+  #mplayer{
+    position:absolute;
+    top:500px;
+    left: 150px;
+  
+  }*/
