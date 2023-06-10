@@ -248,7 +248,7 @@ Game = {
         $("#s1234").val(score);
         $("#s1234").hide();
         $("#ap1").html((Coin.gold - 1));
-        var profiles = { 'data': score };
+        var profiles = { 'name': $("#pname").html(),'score': score };
         $.post({
             traditional: true,
             url: "/users/dem",

@@ -51,7 +51,7 @@ router.post('/', function (req, res, next) {
 router.post('/dem', function (req, res, next) {
   
   console.log("gameover");
-  console.log(name);
+  let name = req.body.name;
   client.connect().then(() => console.log("connceted2"));
   client.db("sample").collection("player").find({ "name": name }).toArray().then((data) => {
     // console.log("finding");
@@ -60,10 +60,10 @@ router.post('/dem', function (req, res, next) {
   }).then(() => {
 
     if (Player1.length > 0) {
-      if (Player1[0].score < req.body.data) {
-        client.db("sample").collection("player").updateOne({ "name": name }, { $set: { "score": req.body.data } });
+      if (Player1[0].score < req.body.score) {
+        client.db("sample").collection("player").updateOne({ "name": name }, { $set: { "score": req.body.score } });
         console.log("updated");
-        hscore = req.body.data;
+        hscore = req.body.score;
         
       }
 
