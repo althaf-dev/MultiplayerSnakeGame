@@ -9,6 +9,7 @@ class snakePart {
     }
 }
 var gamevalues;
+var run = 0;
 
 
 
@@ -19,14 +20,19 @@ const socketApi = function () {
         console.log("user connected with: " + socket.id);
         socket.on("init", (data) => {
 
-            data.headY = data.headX = Math.floor(Math.random() * 20);
+            data.headY = Math.floor((Math.random() * 10)+1);
+            data.headX = Math.floor((Math.random() * 10)+1);
             data.color = generateRandomColor();
             movplayer.set(data.name, data);
             gamevalues = Object.fromEntries(movplayer)
+            console.log(gamevalues);
             io.emit("init", gamevalues);
-            gameEngine(socket);
+            if(run == 0){
+                gameEngine(socket);
+            }
+            
             function gameEngine(socket) {
-
+                run=1;
                 changeSnakePosition();
                 checkCollision(socket);
                 wallHit();
@@ -60,11 +66,11 @@ function generateRandomColor() {
 }
 
 function changeSnakePosition() {
-
+ 
     let users = Object.keys(gamevalues);
     users.forEach((values) => {
         if (gamevalues[values].pause == 0) {
-
+          
             gamevalues[values].headX = gamevalues[values].headX + gamevalues[values].xvel;
             gamevalues[values].headY = gamevalues[values].headY + gamevalues[values].yvel;
 
@@ -79,14 +85,14 @@ function changeSnakePosition() {
 
 
 function checkCollision(socket) {
-
+   // console.log("step1");
     let users = Object.keys(gamevalues);
     users.forEach((values) => {
 
         if (redApple.appleX == gamevalues[values].headX && redApple.appleY == gamevalues[values].headY) {
-
-            redApple.appleX = Math.floor(Math.random() * 20);
-            redApple.appleY = Math.floor(Math.random() * 20);
+            console.log("step2");
+            redApple.appleX = Math.floor((Math.random() * 10)+1);
+            redApple.appleY = Math.floor((Math.random() * 10)+1);
             gamevalues[values].tail++;
             gamevalues[values].score++;
             io.emit("eat", redApple);
@@ -102,7 +108,7 @@ function wallHit() {
     let users = Object.keys(gamevalues);
     users.forEach((values) => {
 
-        if (gamevalues[values].headX < -2 || gamevalues[values].headX > 20 || gamevalues[values].headY < -1 || gamevalues[values].headY > 20) {
+        if (gamevalues[values].headX < 0 || gamevalues[values].headX > 15 || gamevalues[values].headY < 0 || gamevalues[values].headY > 11) {
             gameov = 1;
             gamevalues[values].pause = 1;
             gamevalues[values].gameover = 1;

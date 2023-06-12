@@ -1,0 +1,10 @@
+1. Initial postion of the snake in multiplayer mode is to be corrected
+
+    In multiplayer mode game start without showing initial position of snake .
+    After pressing up arrow button it appears.
+    
+
+2. The speed of snake is getting increased automatically when a player join back after game over.
+
+        - This is is solved by limiting the call to game engine . Before game engine was called each time player joins
+        It is changed to call only if game engine not alredy running. a flag called run is added to this.
